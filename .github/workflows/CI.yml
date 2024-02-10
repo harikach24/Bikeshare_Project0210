@@ -40,6 +40,9 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name : Install Dependencies
+      run: |
+        pip install --upgrade build
     - name: Package the build
       # working-directory: bikeshare_project
       run: |
